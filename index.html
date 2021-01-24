@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http:equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=">
+
+    <title>Netflix</title>
+    <meta name="description" content="Video streaming website Netflix with TailwindCSS">
+    <!-- Tailwind css cdn -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fix.css">
+    <!-- Font Awesome icons -->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="w-full h-screen bg-cover bg-no-repeat bg-med lg:bg-large pr-20 overflow-hidden" style="background-image: url(./images/background.jpg)">
+    <main class="">
+      <!-- LOGO & NAVIGATION -->
+      <div>
+        <header class="">
+          <div class="flex space-x-3 ml-14 font-sans text-white w-full mt-3 transform scale-110 fix">
+            <a href="https://www.netflix.com/browse" class=""><img class="float-left w-20 mr-6 mt-1" src="./images/Netflix-logo.png"></a>
+            <a href="https://www.netflix.com/browse" class="relative text-gray-100 font-bold font-thin hover:text-gray-300">Acceuil</a>
+            <a href="https://www.netflix.com/browse/genre/83" class="relative hover:text-gray-300">Séries</a>
+            <a href="https://www.netflix.com/browse/genre/34399" class="relative hover:text-gray-300">Films</a>
+            <a href="https://www.netflix.com/latest" class="relative hover:text-gray-300">Nouveautés les plus regardées</a>
+            <a href="https://www.netflix.com/browse/my-list" class="relative hover:text-gray-300">Ma liste</a>
+            </div>
+                        <!-- USER INTERFACE -->
+            <nav>
+            <div class="text-white static float-right user transform scale-110">
+              <ul class="flex justify-between space-x-4 mr-4">
+                <li><a href="#"><i class="text-bold fas fa-search"></i></a></li>
+                <li><a href="#"><i class="text-bold fa fa-gift"></i></a></li>
+                <li><a href="#"><i class="text-bold fa fa-bell"></i></a></li>
+                <li><a href="#"><img src="./images/Profil.png" class="h-5 w-5 rounded-md"></a></li>
+                <li><a href="#"><i class="fa fa-angle-down"></i></a></li>
+              </ul>
+            </nav>
+            <!-- MOVIE DESCRIPTION & BUTTONS -->
+            <div class="">
+              <a href="https://www.netflix.com/title/81009646"><img class="ml-10 pt-24" src="./images/Jurassic.webp"></a>
+              <div class="text-white ml-10 mt-1 transform scale-110 fix1">
+              <h1><a class="font-bold font-thin text-xs text-gray-300">Regardez la saison 2 maintenant</a></h1>
+              <h2><a class="font-bold text-lg">S2:E1</a><a class="font-thin text-sm font-bold">"La balise de l'espoir"</a></h2>
+              <h3><a class="">Toujours prisonniers de l'île, et sous le choc de la disparition de Ponch,<br>les jeunes placent leurs derniers espoirs dans l'envoi d'un SOS.</a></h3>
+
+              <div class="flex space-x-4 pt-2">
+                <button class="flex space-x-1 bg-white text-black py-1 px-4 rounded">
+                  <a href="#"><i class="font-thin fas fa-play mt-1"></i></a>
+                    <p class="font-bold font-thin"><a href="https://www.netflix.com/watch/81009646?trackId=13752289&tctx=0%2C0%2C1c54c178f974607f5d801e91496d07c41b5dd108%3A4c9505b672592f607a3c21c10faf27a88deca13f%2C1c54c178f974607f5d801e91496d07c41b5dd108%3A4c9505b672592f607a3c21c10faf27a88deca13f%2Cunknown%2C">Lecture</a></p>
+                </button>
+                <button class="flex space-x-1 bg-gray-700 text-white py-1 px-4 rounded">
+                  <a href="#"><i class="fas fa-info-circle mt-1"></i></a>
+                    <p class="font-bold font-thin"><a href="https://www.netflix.com/title/81009646">Plus d'infos</a></p>
+                </button>
+                </div>
+            </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </main>
+  </body>

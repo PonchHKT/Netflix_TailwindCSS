@@ -10,10 +10,24 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="fix.css">
+    <style>
+      .pics {
+      min-width: 19%;
+      }
+      
+      .container-carousel .carousel {
+      display: flex;
+      }
+      
+      .container-carousel {
+      overflow-x: scroll; 
+      scroll-behavior: smooth;
+      }
+      </style>
     <!-- Font Awesome icons -->
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
   </head>
-  <body class="w-full h-screen bg-cover bg-no-repeat bg-med lg:bg-large pr-20 overflow-hidden" style="background-image: url(./images/background.jpg)">
+  <body class="w-full h-screen bg-cover bg-no-repeat bg-med lg:bg-large pr-20 bg-black" style="background-image: url(./images/background.jpg)">
     <main class="">
       <!-- LOGO & NAVIGATION -->
       <div>
@@ -40,6 +54,8 @@
             <!-- MOVIE DESCRIPTION & BUTTONS -->
             <div class="">
               <a href="https://www.netflix.com/title/81009646"><img class="ml-10 pt-24" src="./images/Jurassic.webp"></a>
+              <br>
+              <br>
               <div class="text-white ml-10 mt-1 transform scale-110 fix1">
               <h1><a class="font-bold font-thin text-xs text-gray-300">Regardez la saison 2 maintenant</a></h1>
               <h2><a class="font-bold text-lg">S2:E1</a><a class="font-thin text-sm font-bold">"La balise de l'espoir"</a></h2>
@@ -55,7 +71,158 @@
                     <p class="font-bold font-thin"><a href="https://www.netflix.com/title/81009646">Plus d'infos</a></p>
                 </button>
                 </div>
+                <br>
+                <br>
+                <br>
+                <br>
+
+              </section class="text-white">
+              <!-- Catalog -->
+              <div class="px-12 py-8">
+                <p class="py-2 font-semibold text-xl">My List</p>
+                <div class="flex items-center relative">
+                <div class="absolute left-0 left-arrow">
+                <button class="p-4 h-32 focus:outline-none"><i class="fas fa-angle-left"></i></button>
+                <div class="container-carousel">
+                <div class="grid gap-2 mr-20 carousel">
+                  <div class="pics">
+                  <a href="#"><img src="images/img/Titan.webp" alt="" class="rounded"></a>
+                  </div>
+                  <div class="pics">
+                  <a href="#"><img src="images/img/Naruto.webp" alt="" class="rounded"></a>
+                </div>
+                  <div class="pics">
+                  <a href="#"><img src="images/img/Spenser.jpg" alt="" class="rounded"></a>
+                </div>
+                  <div class="pics">
+                  <a href="#"><img src="images/img/Outer.jpg" alt="" class="rounded"></a>
+                </div>
+                  <div class="pics">
+                  <a href="#"><img src="images/img/Riverdale.jpg" alt="" class="rounded"></a>
+                </div>
+                  <div class="pics">
+                  <a href="#"><img src="images/img/Jurassic.jpg" alt="" class="rounded"></a>
+                </div>
+                  <div class="pics">
+                  <a href="#"><img src="images/img/Destin.jpg" class="rounded"></a>
+                </div>
+                  <div class="pics">
+                  <a href="#"><img src="images/img/LaDame.jpg" alt="" class="rounded"></a>
+                </div>
+                  <div class="pics">
+                  <a href="#"><img src="images/img/Tourist.webp" alt="" class="rounded"></a>
+                </div>
+                  <div class="pics">
+                  <a href="#"><img src="images/img/Cobra.jpg" alt="" class="rounded"></a>
+                  </div>
+                  </div>
+                  </div>
+
+                  <div class="px-12 py-8">
+                  <p class="py-2 font-semibold text-xl">TV Shows</p>
+                  <div class="flex items-center relative">
+                  <div class="absolute left-0 left-arrow">
+                  <button class="p-4 h-32 focus:outline-none"><i class="fas fa-angle-left"></i></button>
+                  <div class="container-carousel">
+                  <div class="grid gap-2 mr-20 carousel">
+                    <div class="pics">
+                <a href="#"><img src="images/img/Titan.webp" alt="" class="rounded"></a>
+                </div>
+                <div class="pics">
+                <a href="#"><img src="images/img/Naruto.webp" alt="" class="rounded"></a>
+              </div>
+                <div class="pics">
+                <a href="#"><img src="images/img/Spenser.jpg" alt="" class="rounded"></a>
+              </div>
+                <div class="pics">
+                <a href="#"><img src="images/img/Outer.jpg" alt="" class="rounded"></a>
+              </div>
+                <div class="pics">
+                <a href="#"><img src="images/img/Riverdale.jpg" alt="" class="rounded"></a>
+              </div>
+                <div class="pics">
+                <a href="#"><img src="images/img/Jurassic.jpg" alt="" class="rounded"></a>
+              </div>
+                <div class="pics">
+                <a href="#"><img src="images/img/Destin.jpg" alt="" class="rounded"></a>
+              </div>
+                <div class="pics">
+                <a href="#"><img src="images/img/LaDame.jpg" alt="" class="rounded"></a>
+              </div>
+                <div class="pics">
+                <a href="#"><img src="images/img/Tourist.webp" alt="" class="rounded"></a>
+              </div>
+                <div class="pics">
+                <a href="#"><img src="images/img/Cobra.jpg" alt="" class="rounded"></a>
+              </div>
+                  </div>
+                </div>
+
+              <div class="px-12 py-8">
+                <p class="py-2 font-semibold text-xl">Movies</p>
+                <div class="flex items-center relative">
+                <div class="absolute left-0 left-arrow">
+                <button class="p-4 h-32 focus:outline-none"><i class="fas fa-angle-left"></i></button>
+                <div class="container-carousel">
+                <div class="grid gap-2 mr-20 carousel">
+                  <div class="pics">
+              <a href="#"><img src="images/img/Titan.webp" alt="" class="rounded"></a>
+              </div>
+              <div class="pics">
+              <a href="#"><img src="images/img/Naruto.webp" alt="" class="rounded"></a>
             </div>
+              <div class="pics">
+              <a href="#"><img src="images/img/Spenser.jpg" alt="" class="rounded"></a>
+            </div>
+              <div class="pics">
+              <a href="#"><img src="images/img/Outer.jpg" alt="" class="rounded"></a>
+            </div>
+              <div class="pics">
+              <a href="#"><img src="images/img/Riverdale.jpg" alt="" class="rounded"></a>
+            </div>
+              <div class="pics">
+              <a href="#"><img src="images/img/Jurassic.jpg" alt="" class="rounded"></a>
+            </div>
+              <div class="pics">
+              <a href="#"><img src="images/img/Destin.jpg" alt="" class="rounded"></a>
+            </div>
+              <div class="pics">
+              <a href="#"><img src="images/img/LaDame.jpg" alt="" class="rounded"></a>
+            </div>
+              <div class="pics">
+              <a href="#"><img src="images/img/Tourist.webp" alt="" class="rounded"></a>
+            </div>
+              <div class="pics">
+              <a href="#"><img src="images/img/Cobra.jpg" alt="" class="rounded"></a>
+            </div>
+                </div>
+
+            <!-- arrow right -->
+              <div class="absolute right-0 right-arrow">
+              <button class="p-4 h-32 hover:bg-black hover:opacity-50 focus:outline-none"><i class="fas fa-angle-right"></i></button>
+             </div>
+             
+            </section>
+
+            <script>
+              const carousel = document.querySelector('.container-carousel');
+              
+              const left = document.querySelector('.left-arrow');
+              const right = document.querySelector('.right-arrow');
+              
+              // // right -> Event listener //
+              
+              right.addEventListener("click", () => {
+              carousel.scrollLeft +=carousel.offsetWidth; 
+              });
+              
+              // left -> Event listener //
+              
+              left.addEventListener("click", () => {
+              carousel.scrollLeft -=carousel.offsetWidth;
+              });
+              
+              </script>
             </div>
           </div>
         </header>

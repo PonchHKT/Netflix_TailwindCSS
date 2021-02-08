@@ -1,0 +1,137 @@
+.pics {
+min-width: 24%;
+margin-right: 3px;
+}
+
+.container-carousel .carousel {
+display: flex;
+}
+
+.container-carousel {
+overflow-x: scroll; 
+overflow:hidden;
+scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.container-display {
+display : flex; /* flex */
+justify-content:center; /* justify-center */
+align-items: center; /* items-center */
+box-sizing:border-box; /* box-border */
+}
+
+.container {
+position:relative; /* relative */
+min-width: 20%;
+display : flex; /* flex */
+
+}
+
+.container .box {
+position:relative; /* relative */
+width: 275px;
+height: 275px;
+overflow: hidden; /* overflow-hidden */
+transition: 0.5s; /* transition duration-500 ease-in-out */
+}
+
+.container .box:hover {
+z-index:20; /* z-20 */
+transform: scale(1.25); /* transform hover:scale-125 */
+background-color: rgb(30, 30, 30); /* bg-gray-900 */
+box-shadow : 0 25px 40px rgba(0, 0, 0, 0.8); /* shadow-md */
+}
+
+.container .box .imgBox {
+position:absolute; /* relative */
+top: 0; /* top-0 */
+left: 0; /* left-0 */
+width : 100%; /* w-full */
+height: 50%; /* h-3/6 */
+}
+
+.container .box .imgBox:before {
+position:absolute; /* relative */
+top: 0; /* top-0 */
+left: 0; /* left-0 */
+z-index:20; /* z-20 */
+width : 100%; /* w-full */
+height: 50%; /* h-3/6 */
+transition: 0.5s; /* transition duration-500 ease-in-out */
+opacity:0; /* opacity-0 */
+}
+
+.container .box:hover .imgBox:before {
+opacity:1; /* opacity-100 */
+}
+
+.container .box .imgBox .img {
+position:absolute; /* relative */
+top: 0; /* top-0 */
+left: 0; /* left-0 */
+}
+
+.container .box .content {
+display : flex; /* flex */
+align-items:flex-end; /* items-end */
+position:absolute; /* relative */
+top: 0; /* top-0 */
+left: 0; /* left-0 */
+width : 100%; /* w-full */
+height: 100%; /* h-full */
+z-index:20; /* z-20 */
+padding:20px; /* p-5 */
+}
+
+.container .box .content p {
+font-size : 12px; /* text-sm */
+padding-top:10px;
+transform: translateY(300px); /* transform translate-y-0 */
+/* transition: 0.5s; */
+}
+
+.container .box:hover .content p {
+transform: translateY(0); /* transform translate-y-0 */
+/* transition-delay:(0.7s); */
+}
+
+.container .box .content .border-red {
+font-size : 12px; /* text-sm */
+transform: translateY(300px); /* transform translate-y-0 */
+/* transition: 0.5s; */
+}
+
+.container .box:hover .content .border-red {
+transform: translateY(0); /* transform translate-y-0 */
+/* transition-delay:(0.7s); */
+}
+
+.user {
+    position: relative;
+    top: -25px;
+    left: 70px;
+}
+
+.fix {
+    position: relative;
+    left: 60px;
+}
+
+.fix1 {
+    position: relative;
+    left: 70px;
+}
+
+.play {
+    position: relative;
+    left: 100px;
+}
+
+.bottomm{
+    position: relative;
+    bottom: -150px;
+}

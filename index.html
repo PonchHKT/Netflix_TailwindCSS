@@ -10,28 +10,7 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="fix.css">
-    <style>
-      .pics {
-      min-width: 24%;
-      margin-right: 3px;
-      }
-      
-      .container-carousel .carousel {
-      display: flex;
-      }
-
-      .container-carousel {
-      overflow-x: scroll; 
-      overflow:hidden;
-      scroll-behavior: smooth;
-      }
-
-      body {
-        overflow-x: hidden;
-      }
-
-      
-      </style>
+    <link rel="stylesheet" href="./assets/style.css">
     <!-- Font Awesome icons -->
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
   </head>
@@ -48,6 +27,7 @@
             <a href="https://www.netflix.com/latest" class="relative hover:text-gray-300">Nouveautés les plus regardées</a>
             <a href="https://www.netflix.com/browse/my-list" class="relative hover:text-gray-300">Ma liste</a>
             </div>
+          </div>
       <!-- USER INTERFACE -->
             <nav>
             <div class="text-white static float-right user">
@@ -58,6 +38,7 @@
                 <li><a href="#"><img src="./images/Profil.png" class="h-5 w-5 rounded-md"></a></li>
                 <li><a href="#"><i class="fa fa-angle-down"></i></a></li>
               </ul>
+              </div>
             </nav>
           </header>
 
@@ -70,9 +51,11 @@
               <h1><a class="font-bold font-thin text-xs text-gray-300">Regardez la saison 2 maintenant</a></h1>
               <h2><a class="font-bold text-lg">S2:E1</a><a class="font-thin text-sm font-bold">"La balise de l'espoir"</a></h2>
               <h3><a class="">Toujours prisonniers de l'île, et sous le choc de la disparition de Ponch,<br>les jeunes placent leurs derniers espoirs dans l'envoi d'un SOS.</a></h3>
+              </div>
+            </div>
 
             <!-- BUTTONS PLAY & MORE -->
-              <div class="flex space-x-4 pt-2">
+              <div class="flex space-x-4 pt-2 play">
                 <button class="flex space-x-1 bg-white text-black py-1 px-4 rounded hover:opacity-80">
                   <a href="#"><i class="font-thin fas fa-play mt-1"></i></a>
                     <p class="font-bold font-thin"><a href="https://www.netflix.com/watch/81009646?trackId=13752289&tctx=0%2C0%2C1c54c178f974607f5d801e91496d07c41b5dd108%3A4c9505b672592f607a3c21c10faf27a88deca13f%2C1c54c178f974607f5d801e91496d07c41b5dd108%3A4c9505b672592f607a3c21c10faf27a88deca13f%2Cunknown%2C">Lecture</a></p>
@@ -82,53 +65,81 @@
                     <p class="font-bold font-thin"><a href="https://www.netflix.com/title/81009646">Plus d'infos</a></p>
                   </button>
                 </div>
-              </main>
-
-              <br>
-              <br>
-
-              <section class="text-white">
-
-                <div class="container-display">
-                  <div class="container grid gap-2">
-              
-                    <div class="box">
-                      <div class="imgBox">
-                        <img class="rounded" src="./images/trending/Arkam.webp" alt="">
-                      </div>
-              
-                      <div class="content">
-                        <div>
-                          <p class="space-x-2"><i class="fas fa-play-circle text-3xl"></i><i class="fas fa-plus-circle text-3xl"></i></p>
-                          <p class="font-semibold">S3:E1<span>"TEXT TEXT SEASON3"</span></p>
-                          <div class="flex justify-between">
-                            <div class="border-red bg-red-600 w-4/6 h-1 my-4"></div>
-                            <p>3 of 40mins</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="box">
-                        <div class="imgBox">
-                          <img class="rounded" src="./images/trending/Arkam.webp" alt="">
-                        </div>
                 
-                        <div class="content">
-                          <div>
-                            <p class="space-x-2"><i class="fas fa-play-circle text-3xl"></i><i class="fas fa-plus-circle text-3xl"></i></p>
-                            <p class="font-semibold">S3:E1<span>"TEXT TEXT SEASON3"</span></p>
-                            <div class="flex justify-between">
-                              <div class="border-red bg-red-600 w-4/6 h-1 my-4"></div>
-                              <p>3 of 40mins</p>
-                            </div>
-                          </div>
+              <div class="container-display bottomm text-white">
+                <div class="container grid gap-2">
+                    <div class="box">
+                        <div class="imgBox">
+                            <img src="./assets/img/the100.png" alt="" class="rounded">
                         </div>
-                  
+                        <div class="content">
+                            <div>
+                                <!-- add svg icon : thumbs up, thumbs down, etc -->
+                                <p class="space-x-2">
+                                    <i class="fas fa-play-circle text-3xl"></i>
+                                    <i class="fas fa-plus-circle text-3xl"></i>
+                                </p>
+                                <p class="font-semibold">S2:E15 <span class="font-light">"Blood Must Have Blood, Part 1"</span></p>
+                                <div class="flex justify-between">
+                                    <div class="border-red bg-red-600 w-4/6 h-1 my-4"></div>
+                                    <p>40 of 41 min</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="imgBox">
+                            <img src="./assets/img/breakingbad.png" alt="" class="rounded">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <!-- add svg icon : thumbs up, thumbs down, etc -->
+                                <p class="space-x-2">
+                                    <i class="fas fa-play-circle text-3xl"></i>
+                                    <i class="fas fa-plus-circle text-3xl"></i>
+                                </p>
+                                <div class="flex justify-between space-x-2">
+                                    <p class="font-semibold text-green-600">96% Match</p>
+                                     <!-- modify border -->
+                                    <p class="border px-1 pb-1 border-gray-400">16+</p>
+                                    <p class="">5 Seasons</p>
+                                </div>
+                                <div class="flex justify-between space-x-2">
+                                    <p>Violent</p>
+                                    <p class="text-gray-600">•</p>
+                                    <p>Dark</p>
+                                    <p class="text-gray-600">•</p>
+                                    <p>Suspenseful</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="imgBox">
+                            <img src="./assets/img/lupin.png" alt="" class="rounded">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="imgBox">
+                            <img src="./assets/img/aliceinborderland.png" alt="" class="rounded">
+                        </div>
+                        <div class="content">
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-  <!-- Catalog -->
   <section class="text-white text-lg">
-
-    <!-- Succès -->
     <div class="px-12 py-9">
       <p class="py-4 font-semibold">Les plus gros succès sur Netflix</p>
       <div class="flex items-center relative">

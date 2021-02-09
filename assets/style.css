@@ -135,3 +135,28 @@ transform: translateY(0); /* transform translate-y-0 */
     position: relative;
     bottom: -150px;
 }
+
+    .movie-container {
+    position : relative;
+    }
+    
+    .movie-container .movie-hover {
+    position : absolute;
+    text-align : center;
+    }
+    
+    .movie-container:hover .movie-hover {
+    opacity: 0;
+    }
+    
+    .movie-container .movie-img {
+    position : absolute;
+    }
+    .movie-container .movie-hover {
+        position: absolute;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2em;
+        color: white;
+        transition: all .5s;
+        }
